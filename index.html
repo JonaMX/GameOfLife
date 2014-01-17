@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title>Game of Life</title>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="life.js"></script>
+	</script>
+</head>
+<body>
+	<div id="container">
+		<div id="life">
+			<div id="title"><h1>Game of Life</h1>By Jonatan Juárez</div>
+			<ul id="tablero"></ul>
+			<div id="panel">
+				<label>Dead cells</label><span id="dead"></span>
+				<label>Live cells</label><span id="live"></span>
+				<label>Generation</label><span id="gen"></span>
+				<input id="start" class="button" type="button" onclick="javascript: life.init();" value="Start" />
+				<input id="stop" class="button" type="button" onclick="javascript: life.stop();" value="Stop" disabled/>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
