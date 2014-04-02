@@ -1,5 +1,3 @@
-var interval;
-
 var life = {
   board: [],
   interval: 200,
