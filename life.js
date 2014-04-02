@@ -31,8 +31,8 @@ var life = {
         counter++;
 
         this.live += cell;
-      });
-    });
+      }, this);
+    }, this);
 
     this.dead = counter - this.live;
     $("#board").html(html);
